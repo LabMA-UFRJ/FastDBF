@@ -1,0 +1,5 @@
+Roda o seguinte no PowerShell (mude a versão depois de Framewrok para a maior disponível na pasta):
+
+```
+PS Microsoft.PowerShell.Core\FileSystem::\\projetos2\Wrk\Wrk_Felipe\FastDBF\DBF2CSV\DBF2CSV> C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe .\SocialExplorer.DBF2CSV.csproj
+```

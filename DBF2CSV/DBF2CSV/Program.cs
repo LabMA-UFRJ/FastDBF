@@ -96,7 +96,7 @@ namespace DBF2CSV
         { 
           if(dbf.Header[i].ColumnType != DbfColumn.DbfColumnType.Binary && 
              dbf.Header[i].ColumnType != DbfColumn.DbfColumnType.Memo)
-            swcsv.Write((i == 0 ? "": ",") + dbf.Header[i].Name);
+            swcsv.Write((i == 0 ? "": ";") + dbf.Header[i].Name); // ; is the separator
           else
             Console.WriteLine("WARNING: Excluding Binary/Memo field '" + dbf.Header[i].Name + "'");
           
@@ -141,7 +141,7 @@ namespace DBF2CSV
               
               //end record with a linefeed or end column with a comma.
               if(i < orec.ColumnCount-1) 
-                swcsv.Write(",");
+                swcsv.Write(";"); /// ; is the separator
               
             }
             
